@@ -18,12 +18,26 @@ if "%PORTABLE%"=="1" (
 set CONF_FILE=%SCRIPT_DIR%\dosbox.conf
 set MOUNT_DIR=%SCRIPT_DIR%
 
-
+echo.
+echo +-------------------------+
+echo ^| Noctis IV Plus Launcher ^|
+echo +-------------------------+
+echo.
 
 if "%PORTABLE%"=="1" (
-    echo Using portable bin: "%DOSBOX_X_BIN%"
+    echo Using portable binary: "%DOSBOX_X_BIN%"
 ) else (
-    echo Using installed bin: "%DOSBOX_X_BIN%"
+    echo Using installed binary: "%DOSBOX_X_BIN%"
+)
+
+if not exist "%DOSBOX_X_BIN%" (
+    echo.
+    echo DOSBox-X binary is not installed!
+    echo Download DOSBox-X here: https://github.com/joncampbell123/dosbox-x/releases/latest
+    echo.
+    <nul set /p "=Press any key to exit . . . "
+    pause >nul
+    exit /b
 )
 
 echo Using conf file: "%CONF_FILE%"
