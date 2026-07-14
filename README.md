@@ -1,3 +1,7 @@
+# Noctis IV / Noctis IV Plus - Windows x64 Launcher
+
+This repo aims to make running [Noctis IV](https://web.archive.org/web/20180729203740/http://anynowhere.com/bb/layout/html/doors/local/frameset_noctis.html) / [Noctis IV Plus](https://github.com/jorisvddonk/Noctis-IV-Plus) easier and more performant on modern Windows operating systems. While it is aimed at Noctis IV Plus, these instructions will also work for the Original Noctis IV.
+
 ## Step 1: Download Noctis IV Plus
 First, visit the [Noctis IV Plus latest release page](https://github.com/jorisvddonk/Noctis-IV-Plus/releases/latest) and download the file `nivplus-[VERSION].zip`. Extract all folders to the directory where you cloned this repository. The following folders should now be present:
 - `data`
@@ -16,7 +20,14 @@ Visit the [DOSBox-X latest release page](https://github.com/joncampbell123/dosbo
 No further setup is needed. Proceed to [Step 3](#step-3-launch).
 
 ### Portable Version
-Visit the [DOSBox-X latest release page](https://github.com/joncampbell123/dosbox-x/releases/latest) and download the file `dosbox-x-vsbuild-win64-[VERSION]-portable.zip`. Extract the folder named `bin` to the directory where you cloned this repository.
+Visit the [DOSBox-X latest release page](https://github.com/joncampbell123/dosbox-x/releases/latest) and download the file `dosbox-x-vsbuild-win64-[VERSION]-portable.zip`. Extract the folder named `bin` to the directory where you cloned this repository. The following folders should now be present:
+- `bin`
+- `data`
+- `gallery`
+- `manual`
+- `modules`
+- `movies`
+- `source`
 
 The `Launch.bat` script is configured by default to use the installed version of DOSBox-X. You will need to modify it to use the portable version instead.
 
