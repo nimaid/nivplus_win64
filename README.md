@@ -1,6 +1,6 @@
 # Noctis IV / Noctis IV Plus - Windows x64 Launcher
 
-This repo aims to make running [Noctis IV](https://web.archive.org/web/20180729203740/http://anynowhere.com/bb/layout/html/doors/local/frameset_noctis.html) / [Noctis IV Plus](https://github.com/jorisvddonk/Noctis-IV-Plus) easier and more performant on modern Windows operating systems. While it is aimed at Noctis IV Plus, these instructions will also work for the Original Noctis IV.
+This repo aims to make running [Noctis IV](https://80.style/#/hsp/noctis_iv) / [Noctis IV Plus](https://github.com/jorisvddonk/Noctis-IV-Plus) easier and more performant on modern Windows operating systems. While it is aimed at Noctis IV Plus, these instructions will also work for the Original Noctis IV.
 
 ## Step 1: Download Noctis IV Plus
 First, visit the [Noctis IV Plus latest release page](https://github.com/jorisvddonk/Noctis-IV-Plus/releases/latest) and download the file `nivplus-[VERSION].zip`. Extract all folders to the directory where you cloned this repository. The following folders should now be present:
