@@ -44,4 +44,4 @@ echo Using conf file: "%CONF_FILE%"
 
 
 
-"%DOSBOX_X_BIN%" -c "mount c '%MOUNT_DIR%'" -c "c:" -c "cd modules" -c "NOCTIS.EXE" -conf "%CONF_FILE%"
+"%DOSBOX_X_BIN%" -c "mount c '%MOUNT_DIR%'" -c "c:" -c "cd modules" -c "NOCTIS.EXE" -conf "%CONF_FILE%" -exit
