@@ -6,6 +6,9 @@ set SCRIPT_DIR=%SCRIPT_DIR:~0,-1%
 set DBX_BIN_INSTALLED=C:\DOSBox-X\dosbox-x.exe
 set DBX_BIN_PORTABLE=%SCRIPT_DIR%\bin\x64\Release\dosbox-x.exe
 
+set CONF_FILE=%SCRIPT_DIR%\dosbox.conf
+set MOUNT_DIR=%SCRIPT_DIR%
+
 echo.
 echo ^+------------------------------^+
 echo ^| Noctis IV / IV Plus Launcher ^|
@@ -26,7 +29,7 @@ if exist "%DBX_BIN_INSTALLED%" (
         echo Could not find portable DOSBox-X!
         echo.
         echo ERROR: No DOSBox-X binary found! Unable to launch!
-        echo Download DOSBox-X here: https://github.com/joncampbell123/dosbox-x/releases/latest
+        echo Download DOSBox-X from here: https://github.com/joncampbell123/dosbox-x/releases/latest
         echo.
         <nul set /p "=Press any key to exit . . . "
         pause >nul
@@ -36,16 +39,35 @@ if exist "%DBX_BIN_INSTALLED%" (
 
 echo.
 
-set CONF_FILE=%SCRIPT_DIR%\dosbox.conf
-set MOUNT_DIR=%SCRIPT_DIR%
-
 if "%PORTABLE%"=="1" (
     echo Using portable binary: "%DOSBOX_X_BIN%"
 ) else (
     echo Using installed binary: "%DOSBOX_X_BIN%"
 )
 
-echo Using conf file: "%CONF_FILE%"
+if exist "%CONF_FILE%" (
+    echo Using conf file: "%CONF_FILE%"
+) else (
+    echo Could not find conf file: "%CONF_FILE%"
+    echo.
+    echo ERROR: Configuration file not found! Unable to launch!
+    echo Download here: https://github.com/nimaid/nivplus_win64/raw/refs/heads/main/dosbox.conf
+    echo.
+    <nul set /p "=Press any key to exit . . . "
+    pause >nul
+    exit /b
+)
+
+if not exist "%MOUNT_DIR%\modules\NOCTIS.EXE" (
+    echo.
+    echo ERROR: Noctis IV / IV Plus not found! Unable to launch!
+    echo Download Noctis IV here: https://80.style/packs/zip/hsp/noctis_iv-noctis_iv_download_JmsLdos_onlyK
+    echo Download Noctis IV Plus from here: https://github.com/jorisvddonk/Noctis-IV-Plus/releases/latest
+    echo.
+    <nul set /p "=Press any key to exit . . . "
+    pause >nul
+    exit /b
+)
 
 
 
