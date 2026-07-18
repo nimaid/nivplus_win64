@@ -17,7 +17,7 @@ Next you will need to get [DOSBox-X](https://github.com/joncampbell123/dosbox-x)
 The launcher first tries to use the installed version. If it can't find it, it will look for the portable version. If that fails, it will give you an error message and fail to launch.
 
 ### Installed Version
-Visit the [DOSBox-X latest release page](https://github.com/joncampbell123/dosbox-x/releases/latest) and download the file `dosbox-x-windows-[VERSION]-setup.exe `. Run the installer, keeping the default install location of `C:\DOSBox-X\`.
+Visit the [DOSBox-X latest release page](https://github.com/joncampbell123/dosbox-x/releases/latest) and download the file `dosbox-x-windows-[VERSION]-setup.exe`. Run the installer, keeping the default install location of `C:\DOSBox-X\`.
 
 No further setup is needed. Proceed to [Step 3](#step-3-launch).
 
